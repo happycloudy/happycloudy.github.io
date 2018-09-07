@@ -179,15 +179,6 @@ body {
 }
 
 .showprojects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #30282a;
   color: white;
   height: 5vh;
@@ -205,10 +196,10 @@ body {
 
 .showprojects .showprojects_btn a hr {
   width: 10vw;
-  -webkit-transform: translateX(-1vw);
-          transform: translateX(-1vw);
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-animation: bordersizing 2s infinite;
+          animation: bordersizing 2s infinite;
 }
 
 .block4 {
@@ -217,7 +208,6 @@ body {
 }
 
 .block4 .block41 {
-  height: 33.33333vh;
   color: grey;
 }
 
@@ -233,15 +223,15 @@ body {
   width: 25vw;
 }
 
-.block4 .block42 {
-  height: 80vh;
+.block42 {
+  height: 30vh;
 }
 
-.block4 .block421 {
-  color: grey;
+.block421 {
+  opacity: 0.8;
 }
 
-.block4 .block421 h3 {
+.block421 h3 {
   color: black;
   font-weight: 800;
 }
@@ -259,6 +249,10 @@ body {
 
 .block422 img {
   padding-top: 7vh;
+}
+
+.destination {
+  margin-top: 50px;
 }
 
 footer hr {
@@ -302,8 +296,8 @@ footer .footer-copyright a {
 
 .footer_on_hover:hover {
   opacity: 1;
-  -webkit-animation: shadows 1s infinite;
-          animation: shadows 1s infinite;
+  -webkit-animation: bottomshadows 1s infinite;
+          animation: bottomshadows 1s infinite;
 }
 
 @-webkit-keyframes animate {
@@ -362,7 +356,7 @@ footer .footer-copyright a {
   }
 }
 
-@-webkit-keyframes shadows {
+@-webkit-keyframes bottomshadows {
   0% {
     text-shadow: 0;
   }
@@ -374,7 +368,7 @@ footer .footer-copyright a {
   }
 }
 
-@keyframes shadows {
+@keyframes bottomshadows {
   0% {
     text-shadow: 0;
   }
@@ -383,6 +377,36 @@ footer .footer-copyright a {
   }
   100% {
     text-shadow: 0;
+  }
+}
+
+@-webkit-keyframes bordersizing {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes bordersizing {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 /*# sourceMappingURL=main.css.map */

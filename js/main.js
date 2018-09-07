@@ -3,7 +3,6 @@ $(document).ready(function(){
     $('.discovermore').on('click', function(){
         $('.block2').jump();
     });
-
     
 
     

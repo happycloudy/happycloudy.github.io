@@ -63,14 +63,13 @@ body
         div
             text-decoration: none
             color: white
-
-            
-
-
     .discovermore:hover
         opacity: 0.5
         background-color: black
         transition: 1s
+
+
+
 .block2
     margin-top: 50px
     height: 35vh
@@ -120,9 +119,7 @@ body
 .block32
     color: white
 .showprojects
-    display: flex
-    justify-content: center
-    align-items: center
+
     background-color: #30282a
     color: white
     height: 5vh
@@ -134,13 +131,13 @@ body
             color: white
             hr
                 width: 10vw
-                transform: translateX(-1vw)
+                
                 transition: 1s
+                animation: bordersizing 2s infinite
 .block4
     font-family: Teko 
     display: block
     .block41
-        height: $sizebl4
         color: grey   
         img
             margin-top: 3vh
@@ -148,13 +145,13 @@ body
             color: black
         .colomn1
             width: 25vw
-    .block42
-        height: 80vh
-    .block421
-        color: grey
-        h3
-            color: black
-            font-weight: 800
+.block42
+    height: 30vh
+.block421
+    opacity: 0.8
+    h3
+        color: black
+        font-weight: 800
 .block422
     display: flex
     justify-content: space-around
@@ -163,6 +160,7 @@ body
         padding-top: 7vh
 
 .destination
+    margin-top: 50px
 
 footer
     hr
@@ -190,7 +188,9 @@ footer
 
 .footer_on_hover:hover
     opacity: 1
-    animation: shadows 1s infinite
+    animation: bottomshadows 1s infinite
+
+.destination
 
 
 
@@ -218,10 +218,18 @@ footer
         opacity: 1
 
 
-@keyframes shadows
+@keyframes bottomshadows
     0%
         text-shadow: 0
     50%
         text-shadow: -0 -1px 5px #000000
     100%
         text-shadow: 0
+
+@keyframes bordersizing
+    0%
+        transform: scale(1,1)
+    50% 
+        transform: scale(1.05,1.05)
+    100%
+        transform: scale(1,1)
