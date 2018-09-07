@@ -124,6 +124,7 @@ body
     padding-left: 1vw
     padding-top: 6vh
     height: 30vh
+    font-size: 0.95rem
 .block32
     color: white
 .showprojects
@@ -145,22 +146,23 @@ body
                 transition: 1s
 .block4
     font-family: Teko 
-.block41
-    height: $sizebl4
-    color: grey   
-    img
-        margin-top: 3vh
-    h3
-        color: black
-    .colomn1
-        width: 25vw
-.block42
-    height: $sizebl4 + 10vh
-.block421
-    color: grey
-    h3
-        color: black
-        font-weight: 800
+    display: block
+    .block41
+        height: $sizebl4
+        color: grey   
+        img
+            margin-top: 3vh
+        h3
+            color: black
+        .colomn1
+            width: 25vw
+    .block42
+        height: 80vh
+    .block421
+        color: grey
+        h3
+            color: black
+            font-weight: 800
 .block422
     display: flex
     justify-content: space-around
@@ -168,13 +170,8 @@ body
     img
         padding-top: 7vh
 
-.block43
-    height: $sizebl4 + 70vh
-    display: flex
-    justify-content: center
-    align-items: center
-    background-color: #30282a
-    margin-top: 70px
+.destination
+
 footer
     hr
         height: 3px
@@ -203,7 +200,13 @@ footer
     opacity: 1
     animation: shadows 1s infinite
 
+
+
+
+
+
 @keyframes animate
+
     10%
         opacity: 0.9
     30%

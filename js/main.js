@@ -4,7 +4,6 @@ $(document).ready(function(){
         $('.block2').jump();
     });
 
-    alert('xxx');
     
 
     

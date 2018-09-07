@@ -187,6 +187,7 @@ body {
   padding-left: 1vw;
   padding-top: 6vh;
   height: 30vh;
+  font-size: 0.95rem;
 }
 
 .block32 {
@@ -228,34 +229,35 @@ body {
 
 .block4 {
   font-family: Teko;
+  display: block;
 }
 
-.block41 {
+.block4 .block41 {
   height: 33.33333vh;
   color: grey;
 }
 
-.block41 img {
+.block4 .block41 img {
   margin-top: 3vh;
 }
 
-.block41 h3 {
+.block4 .block41 h3 {
   color: black;
 }
 
-.block41 .colomn1 {
+.block4 .block41 .colomn1 {
   width: 25vw;
 }
 
-.block42 {
-  height: 43.33333vh;
+.block4 .block42 {
+  height: 80vh;
 }
 
-.block421 {
+.block4 .block421 {
   color: grey;
 }
 
-.block421 h3 {
+.block4 .block421 h3 {
   color: black;
   font-weight: 800;
 }
@@ -273,21 +275,6 @@ body {
 
 .block422 img {
   padding-top: 7vh;
-}
-
-.block43 {
-  height: 103.33333vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #30282a;
-  margin-top: 70px;
 }
 
 footer hr {
