@@ -1,4 +1,5 @@
 var state = 0;
+var heightOfcardfield = $('.clients_wrapper').height();
 
 
 $(document).ready(function(){
@@ -51,30 +52,40 @@ $(document).ready(function(){
     
     $('.Home').on('click',function(){
         $('.requestblock').jump();
-    })
+    });
 
     $('.Service').on('click',function(){
         $('.our_services').jump();
-    })
+    });
     
     $('.About_us').on('click',function(){
         $('.about_us').jump();
-    })
+    });
 
     $('.Pricing_Table').on('click',function(){
         $('.our_services1').jump();
-    })
+    });
 
     $('.How_it_work').on('click',function(){
         $('.our_services2').jump();
-    })
+    });
 
     $('.Happy_Clients').on('click',function(){
         $('.clients_wrapper').jump();
-    })
+    });
     $('.Contact_Us').on('click',function(){
         $('footer').jump();
-    })
+    });
+
+
+    if ($(window).width() < 500) {
+        $('.clients_wrapper').css('height', 'auto');
+    };
+
+    if ($(window).width() > 500) {
+        $('.clients_wrapper').css('height', '+=100');
+    };
 });
+
 
 

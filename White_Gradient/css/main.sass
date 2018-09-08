@@ -79,35 +79,31 @@ body
     height: 11px
     color: #394b50
     font-family: Lato
-    font-size: 16px
+    font-size: 1.3rem
     font-weight: 700
     line-height: 22px
     text-transform: uppercase
     padding-left: 20px
 .smalltext
-    width: 32vw
-    height: 57px
     color: #7b7b7b
     font-family: "Open Sans"
-    font-size: 15px
+    font-size: 1.1rem
     font-weight: 400
     line-height: 22px
     padding-top: 20px
     padding-left: 70px
 .row1
-    margin-top: 50px
+    margin-top: 4vh
     margin-left: 3vw
+    .col
+        margin-top: 10px
     img
         margin-top: 60px
         width: 48px
         height: 50px
-.mobile-version_services
-    .bigtext
-        width: 100vw
-    .smalltext
-        width: 100vw
 .container1
-    height: 100vh
+    .col
+        
 
 .about_us
     margin-top: 30px
@@ -148,7 +144,7 @@ body
             
 
 .plan-wrapper
-    height: 70vh
+
     hr
         width: 70%
         opacity: 0.6
@@ -177,7 +173,6 @@ body
         animation: animate 0.8s
         transform: translateY(-40px)
 .steps
-    height: 43vh
     margin-top: 10px
     .row
         .col
@@ -194,15 +189,16 @@ body
         background-color: #ffbb42
         color: #ffffff
         font-family: Lato
-        font-size: 14px
+        font-size: 1.1rem
         font-weight: 400
         text-transform: uppercase
-        margin-left: 45%
+        
     
 
 .clients_wrapper
+    margin-top: 2vh
     background-color: #ffc155
-    height: 80vh
+    width: 100%
     .maintext
         padding-top: 70px
     h4
@@ -227,28 +223,38 @@ body
 .card
     transition: 2s
     width: 60vw
-    margin-top: 40px
     margin-left: 10px
+    margin-top: 40px
     .name
         color: orange
+    .comment
+        font-size: 1.1rem
     .prof, .name
         width: 273px
         height: 12px
         font-family: Lato
-        font-size: 14px
+        font-size: 1.05rem
         font-weight: 400
         line-height: 22px
         text-transform: uppercase
     .prof
         color: black
         opacity: 0.6
-    .prof:hover
 
 .card_active
     transition: 2s
-    transform: scale(1.2,1.2) translateX(200px)
+    transform: scale(1.2,1.2) translateX(10vw)
     background-color: teal
     color: white
+    
+@media only (max-width: 400px)  
+    .card_active
+        transition: 2s
+        transform: scale(1.2,1.2) translateX(10vw)
+        background-color: teal
+        color: white
+        margin-top: 100px
+
 
 .newslatter_wrapper
     margin-top: 100px
@@ -262,6 +268,7 @@ body
         display: flex
         justify-content: center
         border-radius: 100px
+        
         
         
 
@@ -283,33 +290,20 @@ footer
     .contacts
         display: flex
         justify-content: center
+        
     .rights
         height: 6vh
         background-color: #709dca
         display: flex
         justify-content: center
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
 
     
+
 @keyframes animate
     30%
         transform: translateY(10px)
