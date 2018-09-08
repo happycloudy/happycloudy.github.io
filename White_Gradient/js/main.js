@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 
     if ($(window).width() < 500) {
-        $('.clients_wrapper').css('height', 'auto');
+        $('.clients_wrapper').css('height', '+=300');
     };
 
     if ($(window).width() > 500) {
