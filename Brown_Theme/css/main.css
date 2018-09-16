@@ -126,7 +126,11 @@ body {
 }
 
 .block21 {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
   margin-top: 40px;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .block31 {
