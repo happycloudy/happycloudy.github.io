@@ -186,6 +186,12 @@ body {
   background-color: #30282a;
   color: white;
   height: 5vh;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .showprojects .showprojects_btn {
@@ -209,6 +215,10 @@ body {
 .block4 {
   font-family: Teko;
   display: block;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .block4 .block41 {
