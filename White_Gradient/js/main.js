@@ -85,6 +85,16 @@ $(document).ready(function(){
     if ($(window).width() > 500) {
         $('.clients_wrapper').css('height', '+=100');
     };
+
+    $('.our_services').on('mouseenter', function(){
+        $('.row11').css('transform', 'translate(0)');
+        $('.row12').css('transform', 'translate(0)');
+        $('.row13').css('transform', 'translate(0)');
+    });
+
+    $('.row13').on('mouseenter', function(){
+        $('.about_us').css('transform', 'translate(0)');
+    });
 });
 
 

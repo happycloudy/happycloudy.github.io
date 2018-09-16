@@ -76,6 +76,7 @@ body {
   background-color: #ffbb42;
   margin-left: 1vw;
   margin-bottom: 5px;
+  margin-top: 30px;
 }
 
 .requestblock .mac_img {
@@ -140,8 +141,38 @@ body {
   height: 50px;
 }
 
+.row11, .row12, .row13 {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.row11 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.row12 {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+.row13 {
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
 .about_us {
   margin-top: 30px;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .about_us .row2 .col1 {
