@@ -36,6 +36,10 @@ body {
 .block1 {
   background-color: #352d2f;
   height: 93vh;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
 }
 
 .block1 .letus {

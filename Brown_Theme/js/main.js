@@ -12,5 +12,9 @@ $(document).ready(function(){
     $('.showprojects_btn').on('mouseenter' , function(){
         $('.block4').css('transform', 'translate(0)');
     });
+
+    setTimeout(() => {
+        $('.block1').css('transform', 'translate(0)');
+    }, 100);
     
 });
